@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flexbox Layout Example</title>
+<style>
+ html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 100vh; 
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #37cde0;
+  padding: 5px;
+  height: 320px;
+  width: 32%;
+  box-sizing: border-box;
+}
+
+.flex-container div {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  padding: 5px;
+  margin: 5px;
+  text-align: center;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.align-start {
+  align-content: flex-start;
+}
+
+.align-end {
+  align-content:flex-end;
+}
+
+.align-center {
+  align-content: center;
+}
+
+.align-space-between {
+  align-content: space-around;
+}
+
+.align-space-around {
+  align-content: space-between;
+}
+
+
+
+</style>
+</head>
+<body>
+
+<div class="main-container">
+  <div class="row">
+    <div class="flex-container align-start">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+    </div>
+
+    <div class="flex-container align-center">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+    </div>
+
+    <div class="flex-container align-end">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="flex-container align-space-between">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+    </div>
+
+    <div class="flex-container align-space-around">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
